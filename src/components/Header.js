@@ -35,7 +35,7 @@ export default function Header() {
   };
   return (
     <div className="">
-      <div className="lg:block lge:block md:hidden mdsm:hidden sm:hidden relative lg:-my-16 lge:-my-16">
+      <div className="lg:block lge:block md:hidden mdsm:hidden sm:hidden relative lg:-mt-16 lge:-mt-16">
         <video ref={videoRef} autoPlay muted playsInline loop>
           <source src={HeaderVideo} type="video/mp4" />
         </video>
