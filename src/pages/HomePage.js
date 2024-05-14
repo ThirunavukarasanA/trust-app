@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import GlobeAnimation from "../components/GlobeAnimation";
+import Nav from "../components/Nav";
+import PhotoScroll from "../components/PhotoScroll";
+import VideoMessage from "../components/VideoMessage";
 // import ScrollSection from "./ScrollSection";
 
 export default function HomePage() {
@@ -26,7 +29,12 @@ export default function HomePage() {
   return (
     <div>
       <Header />
+      <div className="sticky top-0">
+        <Nav />
+      </div>
       <GlobeAnimation />
+      <PhotoScroll />
+      <VideoMessage />
       {/* <ScrollSection /> */}
     </div>
   );
