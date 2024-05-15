@@ -1,0 +1,13 @@
+/* .nnav {
+  background-color: gainsboro;
+  color: black;
+  border-radius: 50px;
+  padding: 5px;
+
+} */
+.active {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 5px;
+}
