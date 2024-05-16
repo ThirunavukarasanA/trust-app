@@ -1,28 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../Assets/css/nav.css";
+import GlobeAnimation from "./GlobeAnimation";
 export default function Nav() {
   useEffect(() => {
-    // const sections = document.querySelectorAll("section");
-    // const navLi = document.querySelectorAll("nav ul li");
-    // window.addEventListener("scroll", () => {
-    //   let current = "";
-    //   sections.forEach((section) => {
-    //     // console.log(section);
-    //     const sectionTop = section.offsetTop;
-    //     console.log(sectionTop);
-    //     const sectionHeight = section.clientHeight;
-    //     console.log(sectionHeight);
-    //     if (window.scrollY >= sectionTop - sectionHeight / 3) {
-    //       current = section.getAttribute("id");
-    //     }
-    //   });
-    //   navLi.forEach((li) => {
-    //     li.classList.remove("active");
-    //     if (li.classList.contains(current)) {
-    //       li.classList.add("active");
-    //     }
-    //   });
-    // });
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
 
@@ -73,20 +53,20 @@ export default function Nav() {
           </div>
         </nav>
       </div>
-      <section id="globe" className="h-[100vh] border">
+      <GlobeAnimation />
+      {/* <section id="globe" className="h-[100vh]">
         <div className="">
           <div className="">
             <iframe
               src="https://www.pictramap.com/app/view?p=b204cc&paused=1"
-              // style={{ minHeight: "600px", minWidth: "740px" }}
-              className="lg:h-[600px] lg:w-[100%] md:w-[100%] md:h-[100%] mdsm:w-[100%] mdsm:h-[450px] sm:w-[100%] sm:h-[700px]"
+              style={{ minHeight: "600px", minWidth: "740px" }}
+              className="lg:h-[640px] lg:w-[100%] md:w-[100%] md:h-[100%] mdsm:w-[100%] mdsm:h-[450px] sm:w-[100%] sm:h-[700px]"
+              width="100%"
+              height="100%"
             ></iframe>
-            {/* <video controls autoPlay>
-              <source src="https://www.pictramap.com/app/view?p=b204cc&paused=1" type="mp4"/>
-            </video> */}
           </div>
         </div>
-      </section>
+      </section> */}
       <section id="photo" className="h-[100vh] border">
         <div className="">
           <div className="w-[150px] h-[150px] bg-black"></div>
