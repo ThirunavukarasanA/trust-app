@@ -75,7 +75,16 @@ export default function Nav() {
       </div>
       <section id="globe" className="h-[100vh] border">
         <div className="">
-          <div className="w-[150px] h-[150px] bg-ggreen"></div>
+          <div className="">
+            <iframe
+              src="https://www.pictramap.com/app/view?p=b204cc&paused=1"
+              // style={{ minHeight: "600px", minWidth: "740px" }}
+              className="lg:h-[600px] lg:w-[100%] md:w-[100%] md:h-[100%] mdsm:w-[100%] mdsm:h-[450px] sm:w-[100%] sm:h-[700px]"
+            ></iframe>
+            {/* <video controls autoPlay>
+              <source src="https://www.pictramap.com/app/view?p=b204cc&paused=1" type="mp4"/>
+            </video> */}
+          </div>
         </div>
       </section>
       <section id="photo" className="h-[100vh] border">
