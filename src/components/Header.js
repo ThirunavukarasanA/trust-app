@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // import Alien from "../Assets/videos/Episode 1 mygirlfriendisanalien.mp4";
 import { IoMdVolumeHigh, IoMdVolumeOff } from "react-icons/io";
-import HeaderVideo from "../Assets/videos/head.mp4";
+import HeaderVideo from "../Assets/videos/trutee lanscap.mov";
 import TabHeaderVideo from "../Assets/videos/mobbhead.mp4";
 import MobHeader from "../Assets/videos/mobhead2.mp4";
 export default function Header() {
@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <div className="">
       <div className="lg:block lge:block md:hidden mdsm:hidden sm:hidden relative lg:-mt-16 lge:-mt-16">
-        <video ref={videoRef} autoPlay muted playsInline loop>
+        <video ref={videoRef} autoPlay muted playsInline >
           <source src={HeaderVideo} type="video/mp4" />
         </video>
         <div className="absolute top-24 right-10 ">

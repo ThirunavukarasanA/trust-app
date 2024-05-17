@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../Assets/css/nav.css";
 import GlobeAnimation from "./GlobeAnimation";
+import PhotoScroll from "./PhotoScroll";
 export default function Nav() {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
-
     window.addEventListener("scroll", () => {
       let currentSection = "";
       sections.forEach((section) => {
@@ -41,7 +41,7 @@ export default function Nav() {
               </li>
               <li className="text-h5 nnav mx-2">
                 <a href="#photo" className="">
-                  Scroll View
+                  Photo Scroll
                 </a>
               </li>
               <li className="text-h5 nnav mx-2">
@@ -67,11 +67,12 @@ export default function Nav() {
           </div>
         </div>
       </section> */}
-      <section id="photo" className="h-[100vh] border">
+      <PhotoScroll />
+      {/* <section id="photo" className="h-[100vh] border">
         <div className="">
           <div className="w-[150px] h-[150px] bg-black"></div>
         </div>
-      </section>
+      </section> */}
       <section id="last" className="h-[100vh] border">
         <div className="">
           <div className="w-[150px] h-[150px] bg-green"></div>
